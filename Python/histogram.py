@@ -2,8 +2,9 @@ import cv2
 import os
 import numpy as np
 
-input_folder = "../opencv_dataset/Blurry"
-output_folder = "histogramDone"
+input_folder = "/home/saladbot/eceproject/ECE4300_FinalProject/Images/"
+output_folder = "/home/saladbot/eceproject/ECE4300_FinalProject/Images/processed/HistDone"
+
 os.makedirs(output_folder, exist_ok=True)
 
 start_time = cv2.getTickCount()
