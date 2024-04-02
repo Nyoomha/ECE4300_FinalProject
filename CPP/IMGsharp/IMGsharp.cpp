@@ -8,8 +8,8 @@
 namespace fs = std::filesystem;
 
 int main() {
-    std::string source_directory = "../../opencv_dataset/Blurry"; //CHANGE 
-    std::string destination_directory = "ImgSharpDone"; //CHANGE
+    std::string source_directory = "../../opencv_dataset/Blurry";
+    std::string destination_directory = "ImgSharpDone";
 
     int64 start_time = cv::getTickCount();
 
