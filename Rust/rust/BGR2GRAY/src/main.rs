@@ -21,8 +21,8 @@ impl From<std::io::Error> for CustomError {
 }
 
 fn main() -> Result<(), CustomError> {
-    let input_folder = "../../../../opencv_dataset/Blurry";
-    let output_folder = "../../histogramDone";
+    let input_folder = "/home/saladbot/eceproject/ECE4300_FinalProject/Images/";
+    let output_folder = "/home/saladbot/eceproject/ECE4300_FinalProject/Images/BGR2GrayDone";
     fs::create_dir_all(output_folder)?;
 
     let entries = fs::read_dir(input_folder)?;
