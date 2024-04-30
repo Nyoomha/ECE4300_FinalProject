@@ -6,8 +6,8 @@
 namespace fs = std::filesystem;
 
 int main() {
-    std::string input_folder = "../../opencv_dataset/Blue"; # CHANGE
-    std::string output_folder = "B2GDone"; # CHANGE
+    std::string input_folder = "/home/saladbot/eceproject/ECE4300_FinalProject/Images/";
+    std::string output_folder = "/home/saladbot/eceproject/ECE4300_FinalProject/Images/processed"; 
     fs::create_directories(output_folder);
 
     double start_time = static_cast<double>(cv::getTickCount());
