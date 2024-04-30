@@ -13,10 +13,10 @@ func main() {
 	startTime := gocv.GetTickCount()
 
 	// Define the folder containing your JPEG images
-	inputFolder := "../../opencv_dataset/yolo_objects"
+	inputFolder := "/home/saladbot/eceproject/ECE4300_FinalProject/Images/"
 
 	// Create an output folder to save converted images
-	outputFolder := "IMGcropDone"
+	outputFolder := "/home/saladbot/eceproject/ECE4300_FinalProject/Images/cropIMGDone"
 	if err := os.MkdirAll(outputFolder, os.ModePerm); err != nil {
 		fmt.Printf("Error creating output folder: %v\n", err)
 		return
