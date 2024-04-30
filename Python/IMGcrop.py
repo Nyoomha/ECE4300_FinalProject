@@ -3,7 +3,7 @@ import os
 import time
 
 input_folder = "/home/saladbot/eceproject/ECE4300_FinalProject/Images/"
-output_folder = "/home/saladbot/eceproject/ECE4300_FinalProject/Images/processed/CropDone"
+output_folder = "/home/saladbot/eceproject/ECE4300_FinalProject/Images/cropIMGDone"
 
 os.makedirs(output_folder, exist_ok=True)
 
