@@ -10,6 +10,8 @@ namespace fs = std::filesystem;
 int main() {
     std::string source_directory = "../../opencv_dataset/Blurry";
     std::string destination_directory = "ImgSharpDone";
+        std::string input_folder = "/home/saladbot/eceproject/ECE4300_FinalProject/Images/";
+    std::string output_folder = "/home/saladbot/eceproject/ECE4300_FinalProject/Images/sharpIMGDone"; 
 
     int64 start_time = cv::getTickCount();
 
