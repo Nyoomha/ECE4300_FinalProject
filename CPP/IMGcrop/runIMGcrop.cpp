@@ -5,8 +5,6 @@
 int main() {
     double startTime = cv::getTickCount();
 
-    std::string inputFolder = "../../opencv_dataset/yolo_objects"; //change
-    std::string outputFolder = "IMGcropDone";  //change
     std::string input_folder = "/home/saladbot/eceproject/ECE4300_FinalProject/Images/";
     std::string output_folder = "/home/saladbot/eceproject/ECE4300_FinalProject/Images/cropIMGDone"; 
     std::filesystem::create_directories(outputFolder);
