@@ -20,8 +20,9 @@ impl From<std::io::Error> for CustomError {
 }
 
 fn main() -> Result<(), CustomError> {
-    let input_folder = "../../../../opencv_dataset/yolo_objects";
-    let output_folder = "../../resizeDone";
+    
+    let input_folder = "/home/saladbot/eceproject/ECE4300_FinalProject/Images/";
+    let output_folder = "/home/saladbot/eceproject/ECE4300_FinalProject/Images/RESIZEDone";
 
     fs::create_dir_all(output_folder)?;
 
