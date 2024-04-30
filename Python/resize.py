@@ -2,7 +2,7 @@ import os
 import cv2
 
 input_folder = "/home/saladbot/eceproject/ECE4300_FinalProject/Images/"
-output_folder = "/home/saladbot/eceproject/ECE4300_FinalProject/Images/processed/ResizeDone"
+output_folder = "/home/saladbot/eceproject/ECE4300_FinalProject/Images/RESIZEDone"
 
 target_width = 1600
 target_height = 1200
