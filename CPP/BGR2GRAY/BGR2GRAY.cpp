@@ -7,7 +7,7 @@ namespace fs = std::filesystem;
 
 int main() {
     std::string input_folder = "/home/saladbot/eceproject/ECE4300_FinalProject/Images/";
-    std::string output_folder = "/home/saladbot/eceproject/ECE4300_FinalProject/Images/processed/XDone"; 
+    std::string output_folder = "/home/saladbot/eceproject/ECE4300_FinalProject/Images/processed/BGR2GrayDone"; 
     fs::create_directories(output_folder);
 
     double start_time = static_cast<double>(cv::getTickCount());
