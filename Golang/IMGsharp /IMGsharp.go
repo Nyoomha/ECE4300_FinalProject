@@ -12,8 +12,8 @@ import (
 func main() {
 	startTime := gocv.GetTickCount()
 
-	inputFolder := "../../opencv_dataset/Blurry"
-	outputFolder := "IMGsharpDone"
+	inputFolder := "/home/saladbot/eceproject/ECE4300_FinalProject/Images/"
+	outputFolder := "/home/saladbot/eceproject/ECE4300_FinalProject/Images/sharpIMGDone"
 	if err := os.MkdirAll(outputFolder, os.ModePerm); err != nil {
 		fmt.Printf("Error creating output folder: %v\n", err)
 		return
