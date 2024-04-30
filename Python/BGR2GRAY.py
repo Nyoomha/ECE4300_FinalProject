@@ -2,7 +2,7 @@ import cv2
 import os
 
 input_folder = "/home/saladbot/eceproject/ECE4300_FinalProject/Images/"
-output_folder = "/home/saladbot/eceproject/ECE4300_FinalProject/Images/processed"
+output_folder = "/home/saladbot/eceproject/ECE4300_FinalProject/Images/BGR2GrayDone"
 os.makedirs(output_folder, exist_ok=True)
 
 start_time = cv2.getTickCount()
