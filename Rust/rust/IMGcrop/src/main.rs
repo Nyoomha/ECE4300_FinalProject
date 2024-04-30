@@ -30,8 +30,8 @@ fn main() -> Result<(), CustomError> {
         eprintln!("Failed to get the current working directory.");
     }
 
-    let input_folder = "../../../../opencv_dataset/yolo_objects";
-    let output_folder = "../../IMGcropDone";
+    let input_folder = "/home/saladbot/eceproject/ECE4300_FinalProject/Images/";
+    let output_folder = "/home/saladbot/eceproject/ECE4300_FinalProject/Images/cropIMGDone";
 
     fs::create_dir_all(output_folder)?;
 
