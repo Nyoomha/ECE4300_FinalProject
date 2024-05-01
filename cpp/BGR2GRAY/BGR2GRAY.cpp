@@ -2,15 +2,18 @@
 #include <opencv2/highgui/highgui.hpp>
 #include <iostream>
 #include <filesystem>
+#include <fstream>
+#include <chrono>
 
 namespace fs = std::filesystem;
+using namespace std::chrono;
 
 int main() {
     std::string input_folder = "/home/saladbot/eceproject/ECE4300_FinalProject/Images/";
     std::string output_folder = "/home/saladbot/eceproject/ECE4300_FinalProject/Images/BGR2GrayDone"; 
     fs::create_directories(output_folder);
 
-    double start_time = static_cast<double>(cv::getTickCount());
+    auto start_time = high_resolution_clock::now();
 
     for (const auto& entry : fs::directory_iterator(input_folder)) {
         std::string filename = entry.path().filename();
@@ -32,10 +35,10 @@ int main() {
         }
     }
 
-    double end_time = static_cast<double>(cv::getTickCount());
-    double execution_time = (end_time - start_time) / cv::getTickFrequency();
+    auto end_time = high_resolution_clock::now();
+    duration<double> execution_time = duration_cast<duration<double>>(end_time - start_time);
 
-    std::cout << "Execution Time: " << execution_time << " seconds" << std::endl;
+    std::cout << "Execution Time: " << execution_time.count() << " seconds" << std::endl;
 
     return 0;
 }
