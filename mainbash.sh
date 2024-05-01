@@ -1,4 +1,5 @@
 #!/bin/bash
+# to run: bash mainbash.sh
 
 TURQUOISE='\033[0;36m'
 MAGENTA='\033[0;35m'
@@ -28,12 +29,12 @@ function delete_done_folders {
     echo "Emptied out $emptied_folders directories."
 }
 
-send_to_discord() {
-    local webhook_url="https://discord.com/api/webhooks/1165853347388080138/lRTiybGckyxE8dK8xuZkIS_KwFS-YdUZuqdd4y01D58ggzhHNgRi6pyIdqZZgRN_hRGf"
-    local message="$1"
-    local file="$2"
-    curl -H "Content-Type: multipart/form-data" -F "file=@$file" "$webhook_url"
-}
+# send_to_discord() {
+#     local webhook_url="https://discord.com/api/webhooks/1165853347388080138/lRTiybGckyxE8dK8xuZkIS_KwFS-YdUZuqdd4y01D58ggzhHNgRi6pyIdqZZgRN_hRGf"
+#     local message="$1"
+#     local file="$2"
+#     curl -H "Content-Type: multipart/form-data" -F "file=@$file" "$webhook_url"
+# }
 
 
 wait_for_cpu_idle() {

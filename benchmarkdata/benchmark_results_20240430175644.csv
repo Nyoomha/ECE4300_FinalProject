@@ -1,0 +1,8 @@
+Timestamp,Language,Script,Iteration,Execution Time (s)
+2024-04-30 17:56:55,python,BGR2GRAY,1,4.080753
+2024-04-30 17:57:06,python,histogram,1,4.719909
+2024-04-30 17:57:16,python,IMGcrop,1,3.034181
+2024-04-30 17:57:31,python,IMGsharp,1,9.263258
+2024-04-30 17:57:42,python,resize,1,3.851704
+2024-04-30 17:57:44,rust,BGR2GRAY,1,DNF
+2024-04-30 17:57:46,rust,histogram,1,DNF
